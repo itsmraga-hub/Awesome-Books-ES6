@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/itsmraga-hub/Awesome-Books-ES6/issues"
   },
-  "homepage": "https://github.com/itsmraga-hub/Awesome-Books-ES6#readme"
+  "homepage": "https://github.com/itsmraga-hub/Awesome-Books-ES6#readme",
+  "devDependencies": {
+    "hint": "^7.1.1"
+  }
 }
