@@ -15,6 +15,3 @@ export default class Book {
     localStorage.setItem('book', JSON.stringify(myLibrary));
   }
 }
-
-// Instance of book class
-// const bk = new Book();
