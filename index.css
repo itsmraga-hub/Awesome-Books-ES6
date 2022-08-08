@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  height: 100vh;
+}
+
+.header-container {
+  width: 100%;
+  font-size: 1.5em;
+  padding: 0.5em;
+  color: rgba(0, 0, 0, 1);
+  background-color: #aaa;
+}
+
+.header-container .container--div {
+  width: 100%;
+  padding: 0 2.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container .container--div ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-container .container--div ul li {
+  padding: 0 1em;
+  border-right: 1px solid #abf;
+}
+
+.header-container .container--div ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+
+.header-container .container--div ul li:nth-child(3) {
+  border-right: none;
+}
+
+.date {
+  padding: 0.1em 2em;
+  font-size: 1.5em;
+  text-align: end;
+}
+
+.btnRemove {
+  padding: 0.1em 1em;
+}
+
+.main-container {
+  display: block;
+  padding: 2em;
+  overflow-y: scroll;
+  height: 500px;
+  position: absolute;
+  inset: 10em 0;
+  text-align: center;
+}
+
+.main-container::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  font-size: 3em;
+  padding: 0 0 1em 0;
+}
+
+.books-container {
+  font-size: 2em;
+  display: block;
+  width: 100%;
+  border: 2px solid black;
+}
+
+.book {
+  width: 100%;
+  border-bottom: 2px solid black;
+  padding: 0.25em 0.25em;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.book:nth-of-type(odd) {
+  background-color: #aaa;
+}
+
+.btn {
+  padding: 0.2rem;
+}
+
+.form-section {
+  display: none;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.form-sectionActive {
+  display: block;
+}
+
+.form-section .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 2em 0;
+  gap: 0.5em;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+}
+
+input[type="submit"] {
+  width: 20%;
+  padding: 0.5rem;
+  align-self: center;
+}
+
+.contact {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  display: none;
+}
+
+.contactActive {
+  display: block;
+}
+
+.contact .contact-container {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .contact-container .contact-items {
+  width: 100%;
+  padding: 1em;
+  align-self: center;
+  list-style: none;
+}
+
+.contact .contact-container .contact-items .contact-item {
+  padding: 0.5em 0;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.footer .container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.5em 2em;
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    inset: 6em;
+    height: 420px;
+  }
+}
