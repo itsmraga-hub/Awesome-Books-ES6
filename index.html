@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>
+    <title>Awesome books</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="container--div">
+        <p>All Awesome Books</p>
+        <ul class="nav-section">
+          <li><a href="#main-list" class="nav" id="list">List</a></li>
+          <li><a href="#form" class="nav" id="add">Add New</a></li>
+          <li><a href="#contact-page" class="nav" id="contact">Contact</a></li>
+        </ul>
+      </div>
+      <p class="date"></p>
+    </header>
+    <section class="main-container" id="main-list">
+      <div class="container">
+        <h1 class="head">Awesome Books</h1>
+        <div class="books-container">
+
+        </div>
+      </div>
+    </section>
+    <section class="form-section" id="form">
+      <h2>Add a new Book</h2>
+      <form action="./" class="form">
+        <input type="text" class="title" placeholder="Title" />
+        <input type="text" class="author" placeholder="Author" />
+        <input type="submit" value="Add" class="add-btn" />
+      </form>
+    </section>
+    <section class="contact" id="contact-page">
+      <h2>Contact Information</h2>
+      <div class="contact-container">
+        <p>Any questions or want to say Hello? You can reach us through</p>
+        <ul class="contact-items">
+          <li class="contact-item">Email: <a href="">awesomebooks@books.org</a></li>
+          <li class="contact-item">Phone No: +254712345678</li>
+          <li class="contact-item">Address: 641 - 00216 Nairobi</li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">Copyright - Developed by William Raga and Soulemanou</p>
+      </div>
+    </footer>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
